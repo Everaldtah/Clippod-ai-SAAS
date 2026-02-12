@@ -1,0 +1,43 @@
+# FastAPI & Web
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+pydantic==2.6.1
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Database - MySQL for shared hosting
+sqlalchemy==2.0.25
+alembic==1.13.1
+pymysql==1.1.0
+# aiomysql==0.2.0  # Using synchronous mode for compatibility
+
+# AI/ML (Optional - requires API keys)
+openai==1.12.0
+anthropic==0.18.1
+
+# Video Processing
+ffmpeg-python==0.2.0
+
+# Monitoring & Logging
+python-dotenv==1.0.0
+aiofiles==23.2.1
+
+# Utilities
+tenacity==8.2.3
+stripe==8.4.0
+
+# Removed for shared hosting:
+# - sentence-transformers (heavy ML models)
+# - transformers
+# - torch
+# - moviepy
+# - opencv-python
+# - openai-whisper (requires too much resources)
+# - librosa
+# - boto3/botocore (S3 storage)
+# - celery/flower (task queue)
+# - redis
+# - structlog (using standard logging)
